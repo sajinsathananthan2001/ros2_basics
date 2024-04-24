@@ -1,0 +1,5 @@
+Here we added dependencies and other tags in both "package.xml" and "CMakeList.txt"
+
+If there is any red line in vs code then add path of the msg into the vs code add new python or cpp json file 
+
+If you have red line in vs code for cpp then go to ".vscode" file and then "c_cpp_properties.jsson" then add this message file path
