@@ -24,7 +24,10 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/PersonStatus.msg"
   "srv/RectangleArea.srv"
+  "action/CountUntil.action"
 )
+
+ament_export_dependencies(rosidle_default_runtime)
 
 # end------------------------------------
 

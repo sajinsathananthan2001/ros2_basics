@@ -21,7 +21,7 @@ ros2 pkg create --build-type ament_cmake --dependencies rclcpp package_name
 To create a new ROS 2 package in Python with dependencies, you can use the `ros2 pkg create` command followed by the package name and the `--dependencies` flag specifying the dependencies. Here's how you can do it:
 
 ```bash
-ros2 pkg create --build-type ament_python --dependencies package_dependency package_name
+ros2 pkg create package_name --build-type ament_python --dependencies package_dependency 
 ```
 
 Replace `package_dependency` with the dependencies you want to include, separated by commas, and `package_name` with the desired name of your package.
@@ -29,7 +29,7 @@ Replace `package_dependency` with the dependencies you want to include, separate
 For example, if you want to create a package named "my_python_package" with Python support and dependencies on `rclpy` and `std_msgs`, you would use the following command:
 
 ```bash
-ros2 pkg create --build-type ament_python --dependencies rclpy,std_msgs my_python_package
+ros2 pkg create  my_python_package --build-type ament_python --dependencies rclpy std_msgs
 ```
 
 
